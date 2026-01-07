@@ -15,6 +15,9 @@ flux get all
 ```
 
 * create basic demo ns
+```
+kubectl apply -f ns.yaml
+```
 
 Check flux logs
 ```
