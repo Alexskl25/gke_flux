@@ -1,0 +1,6 @@
+GOOGLE_PROJECT = "gen-lang-client-0742345085"
+GOOGLE_REGION  = "us-central1-a"
+GITHUB_OWNER = "Alexskl25"
+GITHUB_TOKEN = "YOUR_GIT_HUB_TOKEN"
+FLUX_GITHUB_REPO = "flux-gitops"
+FLUX_GITHUB_TARGET_PATH = "clusters"
