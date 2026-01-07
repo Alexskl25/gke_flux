@@ -1,5 +1,26 @@
-# gke_flux
+# gke_kind_flux
+Just another test project for training on Flux
 
+1. Clone repo 
+2. Fix vars with yous 
+3. Execute commands below
+
+```
+terraform init
+terraform plan -var-file="vars.tfvars"
+terraform apply -var-file="vars.tfvars"
+kubectl get ns
+curl -s https://fluxcd.io/install.sh | bash
+flux get all
+```
+
+* create basic demo ns
+
+Check flux logs
+```
+flux logs -f
+k get ns
+```
 
 ```
 flux create source git kbot \
@@ -43,3 +64,16 @@ spec:
         name: kbot
   interval: 1m0s
 ```
+
+* Add changes to the GIT and PUSH it
+
+```
+flux logs -f
+```
+
+* Destroy evriroment
+```
+terraform destroy -var-file="vars.tfvars"
+```
+
+# The end
